@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  margin-top: 140px;
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+    0% no-repeat;
+  box-shadow: 4px 6px 23px #a9a9a911;
+
+  &__textfooter {
+    font: normal normal normal 30px/46px MonsterClubhouse;
+    color: #425966;
+    display: none;
+    padding-top: 30px;
+    width: 30%;
+    @include breakpoint(md) {
+      width: 35%;
+      display: block;
+      font-size: 40px;
+    }
+    @include breakpoint(lg) {
+      margin-top: 20px;
+      font-size: 55px;
+    }
+  }
+
+  &__imgcover {
+    width: 60%;
+    @include breakpoint(md) {
+      width: 30%;
+    }
+    @include breakpoint(xl) {
+      width: 25%;
+    }
+
+    &__img {
+      width: 100%;
+      position: relative;
+      top: -50px;
+      @include breakpoint(md) {
+        top: -30px;
+      }
+      @include breakpoint(lg) {
+        top: -50px;
+      }
+    }
+  }
+}
